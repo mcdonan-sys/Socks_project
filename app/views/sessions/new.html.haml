@@ -1,0 +1,11 @@
+%h1 Login
+
+= form_with url: '/login', method: :post do |form|
+  .field
+    = form.label :username
+    = form.text_field :username
+  .field
+    = form.label :password
+    = form.password_field :password
+  .actions
+    = form.submit 'Log in'
